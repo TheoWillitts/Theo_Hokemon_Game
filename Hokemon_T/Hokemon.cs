@@ -51,7 +51,7 @@ namespace Hokemon_T
         {
             Console.WriteLine("\n-----------------");
             Console.WriteLine("\n\nName: {0}\nHealth: {1}/{2}\nAttack: {3}\nSpeed: {4}\nDefense: {5}", Name, Health, max_health, attack, speed, defense);
-            Console.WriteLine("\n\n-----------------");
+            Console.WriteLine("\n\n-----------------\n\n");
         }
 
 

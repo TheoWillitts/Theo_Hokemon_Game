@@ -22,6 +22,13 @@ namespace Hokemon_T
             Hokemon HokeObject02 = new Hokemon();
 
             HokeObject02.get_details();
+
+            BattleArena firstArena = new BattleArena(); //Instantiating the object firstArena
+                                                        //From the BattleArena class
+
+            firstArena.RequestAChallenger(HokeObject01);
+
+            firstArena.AcceptABattle(HokeObject01, HokeObject02);
         }
     }
 }
