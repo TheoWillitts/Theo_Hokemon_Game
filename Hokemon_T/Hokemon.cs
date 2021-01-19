@@ -9,12 +9,15 @@ namespace Hokemon_T
         // MEMBERS - All Attributes, MEthods and Properties are Members of this class.
         // VARIABLES a.k.a ATTRIBUTES inside a class can also be referred to as fields.
 
+        
         private string name;
+        private string nextMove;
         private int health;
         private int max_health;
         private int attack;
         private int speed;
         private int defense;
+  
 
         public string Name
         {
@@ -54,6 +57,12 @@ namespace Hokemon_T
             Console.WriteLine("\n\n-----------------\n\n");
         }
 
+        public void get_next_move()
+        {
+            Console.WriteLine("The battle begins!!");
+            Console.WriteLine("\n\n{0}: I attack with {1}!", Name, attack);
+            Console.WriteLine("What is your move {0}, attack or defend?", Name);
+        }
 
         public int random_int_generator(int min_value, int max_value)
         {
@@ -64,6 +73,11 @@ namespace Hokemon_T
             randomValue = rnd.Next(min_value, max_value);
 
             return randomValue;
+        }
+
+        public void about()
+        {
+            Console.WriteLine("I am a mystical species known as a Hokemon! ");
         }
     }
 }
