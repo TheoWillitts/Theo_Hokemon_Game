@@ -8,35 +8,55 @@ namespace Hokemon_T
         {
             Console.WriteLine("Welcome to the world of Hokemon!");
 
-            // INSTANTIATION of first object
+            // Instantiating a Hokemon
 
-            Hokemon HokeObject01 = new Hokemon();
+            Hokemon Hoke1 = new Hokemon();
+            Hoke1.get_details();
 
-            HokeObject01.get_details();
+            Hoke1.about();
 
-            // Time wait
-            System.Threading.Thread.Sleep(1000); // Sleep for one second.
-            
-            // Instantiating second Hokemon
+            System.Threading.Thread.Sleep(1000);
 
-            Hokemon HokeObject02 = new Hokemon();
+            //Instantiating another Hokemon
 
-            HokeObject02.get_details();
+            Hokemon Hoke2 = new Hokemon();
+            Hoke2.get_details();
 
-            // Instantiating a Halor Hokemon
+            Hoke2.about();
 
-            Halor halorhoke1 = new Halor();
-            halorhoke1.get_details();
+            System.Threading.Thread.Sleep(1000);
 
-            halorhoke1.about();
+            //Instantiating another Hokemon
 
-            /*
+            Hokemon Hoke3 = new Hokemon();
+            Hoke3.get_details();
+
+            Hoke3.about();
+
+            System.Threading.Thread.Sleep(1000);
+
+            //Instantiating another Hokemon
+
+            Hokemon Hoke4 = new Hokemon();
+            Hoke4.get_details();
+
+            Hoke4.about();
+
+            System.Threading.Thread.Sleep(1000);
+
+
+
+
             BattleArena firstArena = new BattleArena(); //Instantiating the object firstArena
                                                         //From the BattleArena class
 
-            firstArena.RequestAChallenger(HokeObject01);
+            firstArena.RequestAChallenger(Hoke1);
 
-            firstArena.AcceptABattle(HokeObject01, HokeObject02); */
+            firstArena.AcceptABattle(Hoke1, Hoke2);
+
+            
+            firstArena.Battle(Hoke1, Hoke2);
+            
         }
     }
 }
